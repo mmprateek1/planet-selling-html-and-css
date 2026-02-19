@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>planet shop</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-weight: bold;
+        color: white;
+      }
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-color: #2c2c2c;
+      }
+      header {
+        height: 70px;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        padding-top: 20px;
+        border-bottom: 2px solid black;
+      }
+
+      ul {
+        display: flex;
+        list-style: none;
+      }
+      ul li a {
+        margin: 0 5px;
+        border: 2px solid white;
+        padding: 0 10px;
+        text-decoration: none;
+        border-radius: 50px;
+      }
+      .logo {
+        border: solid white;
+        padding: 5px 10px;
+      }
+      .signup {
+        background-color: white;
+        color: black;
+      }
+      .signup:hover {
+        background-color: black;
+        color: white;
+      }
+      main {
+        display: flex;
+        height: 90vh;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0px 150px;
+        flex-wrap: wrap;
+      }
+      main h2 {
+        font-size: 30px;
+        text-transform: uppercase;
+      }
+      main p {
+        font-size: 15px;
+        font-weight: 200;
+        line-height: 31.5px;
+        margin: 30px 0px;
+      }
+      .contentleft {
+        flex: 1;
+      }
+      .contentmid {
+        flex: 2;
+      }
+
+      .contentright {
+        flex: 1;
+      }
+      .mercury {
+        max-width: 160px;
+        height: auto;
+        margin-left: 100px;
+        border-radius: 50px;
+      }
+      .btn {
+        padding: 15px 30px;
+        background: white;
+        outline: none;
+        border: none;
+        color: black;
+        border-radius: 50px;
+        font-weight: 700;
+      }
+      .btn:hover {
+        background:#2c2c2c;
+        color: white;
+        cursor: pointer;
+        border:solid;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Logo</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Offers</a></li>
+          <li><a href="#">Buy Now</a></li>
+          <li><a href="#">Sell Now</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#" class="signup">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="contentleft">
+        <h2>mercury</h2>
+      </div>
+
+      <div class="contentmid">
+        <p>
+          Mercury, the innermost planet of the solar system and the eighth in
+          size and mass. Its closeness to the Sun and its smallness make it the
+          most elusive of the planets visible to the unaided eye. Because its
+          rising or setting is always within about two hours of the Sun’s, it is
+          never observable when the sky is fully dark. Mercury is designated by
+          the symbol ☿. <br />
+          Mercury is the closest planet to the Sun, at a distance of 57.91
+          million kilometers / 35.98 miles or 0.4 AU away. It takes sunlight 3.2
+          minutes to travel from the Sun to Mercury.
+        </p>
+        <button class="btn">Buy Now</button>
+      </div>
+      <div class="contentright">
+        <img src="Mercury.jpg" class="mercury" />
+      </div>
+    </main>
+  </body>
+</html>
